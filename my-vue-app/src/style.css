@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 无序列表消除小点 */
+  list-style: none;
+
+  /* 超链接下划线消除 */
+  text-decoration: none;
+}
+
+a {
+  color: #f9f9f9;
+}
+
+body {
+  background-color: #f4f5f7;
+}
+
+/*在屏幕设备中，判断屏幕尺寸大于等于800px的时候*/
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #f4f5f7;
+  }
+}

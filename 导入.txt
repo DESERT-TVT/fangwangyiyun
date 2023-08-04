@@ -1,0 +1,42 @@
+vite4+vue3
+1.vite构建
+npm create vite@latest my-vue-app -- --template vue
+2.axios导入
+cmd:
+npm add axios
+3.element-plus导入
+cmd:
+npm install element-plus
+npm install @element-plus/icons-vue
+main.js:
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+.use(ElementPlus)
+4.jq导入
+npm install jquery
+5.vuerouter 导入
+cmd:
+npm i vue-router@4
+main.js:
+import router from './router'
+.use(router)
+6.vuex的导入
+cmd:
+npm install vuex@next --save
+npm install --save vuex-persistedstate(vuex持久化工具)
+main.js:
+import store from "./store";
+.use(store)
+7.插件unplugin
+npm install unplugin-vue-define-options -D
+配置
+import DefineOptions from 'unplugin-vue-define-options/vite';
+
+export default defineConfig({
+  plugins: [vue(), DefineOptions()],
+});
+<script lang="ts" setup>
+  defineOptions({
+    name: 'MyMenuItem',
+  });
+</script>
